@@ -1,0 +1,32 @@
+table {
+  text-align: center;
+  width: 100%;
+}
+caption {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+tfoot {
+  background-color: green;
+  color: white;
+}
+.shopping {
+  margin-top: 50px;
+  background-color: aliceblue;
+}
+.user {
+  background-color: #d6f6d5;
+  margin-bottom: 50px;
+}
+.schedule {
+  background-color: #eeeeee;
+}
+.sport {
+  background-color: red;
+  cursor: pointer;
+}
+.sport:hover {
+  background-color: black;
+  color: white;
+}

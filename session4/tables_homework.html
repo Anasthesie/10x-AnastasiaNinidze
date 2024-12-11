@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Advanced Tables</title>
+  </head>
+  <body>
+    <table role="table" border="1" class="user">
+      <caption>
+        User Data
+      </caption>
+      <tr role="row">
+        <th role="columnheader" scope="col">Name</th>
+        <th role="columnheader" scope="col">Age</th>
+        <th role="columnheader" scope="col">Email</th>
+      </tr>
+      <tr role="row">
+        <td role="cell">Anastasia Ninidze</td>
+        <td role="cell">21</td>
+        <td role="cell">anastasiachepovs@gmail.com</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Niko Baratashvili</td>
+        <td role="cell">26</td>
+        <td role="cell">Baratashvili@gmail.com</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Elene altunashvili</td>
+        <td role="cell">30</td>
+        <td role="cell">ele123@gmail.com</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Sesili Chantladze</td>
+        <td role="cell">16</td>
+        <td role="cell">SesoChant@gmail.com</td>
+      </tr>
+      <tr>
+        <td role="cell">Davit Daraselia</td>
+        <td role="cell">35</td>
+        <td role="cell">Darasstayhome@gmail.com</td>
+      </tr>
+    </table>
+    <table border="1" class="schedule" role="table">
+      <caption>
+        weekly schedule
+      </caption>
+      <tr role="row">
+        <th></th>
+        <th role="columnheader">Monday</th>
+        <th role="columnheader">Tuesday</th>
+        <th role="columnheader">Wednesday</th>
+        <th role="columnheader">Thursday</th>
+        <th role="columnheader">Friday</th>
+        <th role="columnheader">Saturday</th>
+        <th role="columnheader">Sunday</th>
+      </tr>
+
+      <tr></tr>
+      <tr role="row">
+        <td role="cell">Evening</td>
+        <td role="cell" colspan="3" class="sport">Yoga</td>
+        <td role="cell">Therapy</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Noon</td>
+        <td role="cell" rowspan="2" class="sport">Football</td>
+        <td role="cell">Spanish</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Morning</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Evening</td>
+      </tr>
+
+      <tr role="row">
+        <td role="cell">Afternoon</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Evening</td>
+      </tr>
+      <tr role="row">
+        <td role="cell">Noon</td>
+      </tr>
+    </table>
+    <table border="1" class="shopping" role="table">
+      <caption>
+        Shopping Cart
+      </caption>
+      <thead>
+        <tr role="row">
+          <th role="columnheader">Product</th>
+          <th role="columnheader">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ვ>
+          <td role="cell">Macbook</td>
+          <td role="cell">1000$</td>
+        </tr>
+        <tr role="row">
+          <td role="cell">Macbook</td>
+          <td role="cell">1000$</td>
+        </tr>
+        <tr role="row">
+          <td role="cell">Macbook</td>
+          <td role="cell">1000$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr role="row">
+          <td role="cell">Total</td>
+          <td role="cell">3000$</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
