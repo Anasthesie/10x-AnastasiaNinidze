@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ultimate Forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Input Form</h1>
+      </header>
+
+      <form>
+        <div class="labelwrapper">
+          <label for="firstname"> Full Name </label>
+        </div>
+        <div class="name">
+          <input id="firstname" type="text" placeholder="First name" />
+          <input id="lastname" type="text" placeholder="Last name" />
+        </div>
+
+        <div class="labelwrapper">
+          <label for="location"> Location </label>
+        </div>
+
+        <div class="location">
+          <img alt="LeftIcon" class="lefticon" src="./media/LeftIcon.png" />
+
+          <input id="location" type="text" placeholder="City" />
+
+          <img alt="RightIcon" class="righticon" src="./media/RightIcon.png" />
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="radio" value="radionone" /> Radio 1
+            <span class="radio-circle"></span>
+          </label>
+
+          <label>
+            <input type="radio" name="radio" value="radiotwo" /> Radio 2
+            <span class="radio-circle"></span>
+          </label>
+        </div>
+
+        <div class="company">
+          <label for="company"> Company information </label>
+          <div class="wrapcompany">
+            <input id="company" type="text" placeholder="Company name" />
+          </div>
+        </div>
+        <div class="describe">
+          <label for="describe">
+            <img
+              src="./media/Vector (1).png"
+              alt="lable"
+              width="10.5"
+              height="10.5"
+            />
+            Describe your case
+          </label>
+          <div class="describewrap">
+            <textarea
+              id="describe"
+              placeholder="Tell us about your use case..."
+            ></textarea>
+          </div>
+        </div>
+        <div class="number">
+          <label for="number">Phone number</label>
+
+          <div class="items">
+            <img src="./media/flag.png" />
+            <div class="number">+370</div>
+            <img src="./media/RightIcon.png" />
+          </div>
+          <input id="number" type="number" placeholder="Phone number" />
+        </div>
+        <div class="card">
+          <label for="card">Credit card information</label>
+          <input id="card" type="number" placeholder="Credit card no." />
+          <div class="card-info">
+            <input type="number" placeholder="MM / YY" />
+            <input type="number" placeholder="CCV" />
+          </div>
+        </div>
+        <div class="values">
+          <label>
+            <input
+              type="checkbox"
+              style="background-color: white; border: 2px solid black"
+            />
+            Value 1
+          </label>
+          <label> <input type="checkbox" /> Value 2 </label>
+        </div>
+      </form>
+      <div class="button-wrap">
+        <button>
+          Submit
+          <img src="./media/button .png" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
