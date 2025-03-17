@@ -132,3 +132,87 @@ if (currentBatteryLevel > 80) {
 } else {
   console.log("Low battery");
 }
+
+// Exercise 11
+let dragonHealth = 100;
+let knightAttackDamage = 25;
+
+dragonHealth -= knightAttackDamage;
+
+console.log(`Dragon's Health After Attack: ${dragonHealth}`);
+
+// Exercise 12
+let speedLimit = 50;
+let carSpeed = 30;
+
+carSpeed += 25;
+
+if (carSpeed > speedLimit) {
+  console.log("Speed Warning: You are going too fast!");
+} else {
+  console.log("Speed is okay");
+}
+
+console.log(`Current Speed: ${carSpeed}`);
+
+// Exercise 13
+let heroStrength = 95;
+let villainStrength = 90;
+
+if (heroStrength === villainStrength - 10) {
+}
+
+// Exercise 14
+let hasTreasureMap = true;
+let foundAncientKey = false;
+let solvedRiddleScroll = true;
+let hasCompass = true;
+let isFullMoon = false;
+let canFindTreasure =
+  (hasTreasureMap && foundAncientKey) ||
+  (hasTreasureMap && solvedRiddleScroll) ||
+  (solvedRiddleScroll && hasCompass);
+
+if (canFindTreasure) {
+  console.log("Success! Alex can find the legendary treasure!");
+} else {
+  console.log(
+    " Alas, Alex is missing crucial clues and cannot find the treasure yet."
+  );
+}
+
+// Exercise 15
+
+let IceCreamCone = 4;
+let IceCreamSundae = 8;
+let conesSoldToday = 250;
+let sundaesSoldToday = 120;
+let earningsCone = IceCreamCone * conesSoldToday;
+let earningsSundaes = IceCreamSundae * sundaesSoldToday;
+let total = earningsCone + earningsSundaes;
+
+console.log(`Total earnings before discount ${total}`);
+
+if (total >= 1000) {
+  let totalWithDiscount = total * 0.95;
+  console.log("Volume Discount Applied: Yes");
+} else {
+  console.log("Volume Discount Applied: No");
+}
+
+// Exercise 16
+let ticketPrice = 20;
+let ticketsSold = 500;
+let concertCosts = 8000;
+
+let totalEarnings = ticketPrice * ticketsSold;
+let totalProfit = totalEarnings - concertCosts;
+
+if (totalProfit > 0) {
+  let totalProfit = totalEarnings - concertCosts;
+  console.log(`Concert Profit: ${totalProfit}. Great success!`);
+} else {
+  console.log(
+    `Concert did not cover costs. Earnings: $${totalEarnings}, Costs: $${concertCosts}.`
+  );
+}
