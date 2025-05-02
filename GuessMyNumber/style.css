@@ -1,0 +1,66 @@
+* {
+  font-family: "Jersey 10", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body {
+  background-color: #222222;
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-controls p {
+  font-size: 20px;
+  color: #fff;
+}
+.header-controls button {
+  color: #222222;
+  background-color: #ffff;
+  font-size: 30px;
+  border: 1px solid #ffff;
+  padding: 6px 20px 6px 20px;
+  cursor: pointer;
+}
+h1 {
+  color: #ffff;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 40px;
+  word-spacing: 20px;
+}
+hr {
+  border: 2px solid #ffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hr-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.question-box {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #222222;
+  padding: 10px 60px;
+  font-size: 100px;
+  border: none;
+  font-weight: bold;
+}
