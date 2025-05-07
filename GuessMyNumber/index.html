@@ -19,7 +19,7 @@
     <div class="container">
       <header>
         <div class="header-controls">
-          <button>Again!</button>
+          <button onclick="refreshPage()">Again!</button>
           <p>(Between 1 and 20)</p>
         </div>
         <h1>Guess My Number!</h1>
@@ -28,20 +28,20 @@
 
     <div class="hr-container">
       <hr />
-      <div class="question-box">?</div>
+      <div id="question-box" class="question-box">?</div>
     </div>
     <main>
       <div class="second-container">
         <div class="small-container">
-          <input type="number" min="1" max="20" />
+          <input id="personsNum" type="number" min="1" max="20" />
           <div class="ckeck-button">
-            <button>Check!</button>
+            <button onclick="numComparison()" id="checkbutton">Check!</button>
           </div>
         </div>
         <div class="right-elements">
-          <p class="Start-guessing">Start guessing...</p>
-          <p class="Score">Score:</p>
-          <p class="Highscore">Highscore:</p>
+          <p class="Start-guessing" id="Guessing">Start guessing...</p>
+          <p class="Score" id="score"></p>
+          <p class="Highscore" id="highscore">Highscore:</p>
         </div>
       </div>
     </main>
